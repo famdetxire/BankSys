@@ -3,13 +3,13 @@ package com.cx.bank.dao;
 import java.sql.ResultSet;
 
 public interface BankDaoInterface {
-	public boolean Register(String user_name,String user_password);//×¢²á
-	public ResultSet Login(String user_name,String user_password);//µÇÂ¼
-	public int deposit(double blance,String user);//´æ¿î
-	public int withdrawals(double balance , String user);//È¡¿î
-	public ResultSet getBalance(String User_name); //Óà¶î
-	public ResultSet transfer(String user_name,double balance , int user_id );//×ªÕË
-	public void Record(String log_type , double log_amount ,int user_id);//¼ÇÂ¼²Ù×÷
-	public ResultSet GetLog(int user_id);//»ñÈ¡Ã÷Ï¸
+	public boolean Register(String user_name,String user_password);//æ³¨å†Œ
+	public ResultSet Login(String user_name,String user_password);//ç™»å…¥
+	public int deposit(double blance,String user);//å­˜æ¬¾
+	public int withdrawals(double balance , String user);//å–æ¬¾
+	public ResultSet getBalance(String User_name); //è·å–ä½™é¢
+	public ResultSet transfer(String user_name,double balance , int user_id );//è½¬è´¦
+	public void Record(String log_type , double log_amount ,int user_id);//è®°å½•
+	public ResultSet GetLog(int user_id);//æŸ¥çœ‹æ—¥å¿—
 	public ResultSet selectUser_id(int user_id);
 }
